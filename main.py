@@ -1,16 +1,6 @@
-# This is a sample Python script.
+from board import Board
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# This importd the Board function and calls the whole program, with the parameters of the x and y dimensions of the
+# screen and the number of frames per second the program will be running and lastly, the seconds you have to
+# complete the level
+Board(255, 255, 120, 300)
