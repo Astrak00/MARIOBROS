@@ -49,6 +49,7 @@ class Board:
 
     # This function gets the coordinates of mario, and adds them to the width and height of the player, which then
     # checks, in the range, if mario is between two tile, which he always is, as the tiles are 8 by 8 and mario is
+    # Creatred by Eduardo Alarcón 100472175@alumnos.uc3m.es
     # 13 pixels wide and 16 pixels tall when they are small and 16 by 32 when they are big and divides them by 8.
     # This then checks the tile where mario wants to go and if it is in the list of tiles mario has to collide with,
     # in this case self.player.col_tiles, (collidable tiles)
@@ -214,6 +215,7 @@ class Board:
             self.player.grow_with_mushroom()
 
             # This function checks the position of mario and checks if it is the same as the coins and remove then
+            # Creatred by Eduardo Alarcón 100472175@alumnos.uc3m.es
             # while adding them up to the counter of coins the player has.
             self.player.pick_coin(self.player.x, self.player.y)
 
@@ -349,8 +351,9 @@ class Board:
         for i in self.player.mushroom_list:
             pyxel.blt(i.x, i.y, *i.sprite)
 
-        # We have to check in each frame if Mario is colliding with any block, if he is kicking any block or if he
-        # is picking any mushroom or coin:
+        # We have to check in each frame if Mario is colliding with any block, if he is kicking any block or if they
+        # are picking any mushroom or coin:
+        # Creatred by Eduardo Alarcón 100472175@alumnos.uc3m.es
         self.player.kikblock(self.player.x, self.player.y)
         self.player.grow_with_mushroom()
         self.player.pick_coin(self.player.x, self.player.y)
