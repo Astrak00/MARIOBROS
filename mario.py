@@ -32,6 +32,7 @@ class Mario:
 
     # We have to update the size of Mario, the presence of mushrooms and coins and check if Mario is colliding
     # with blocks:
+    # Creatred by Eduardo Alarcón 100472175@alumnos.uc3m.es
     def update(self):
         if pyxel.btn(pyxel.KEY_M):
             self.character = 'mario'
@@ -105,6 +106,7 @@ class Mario:
 
     # With this function we check Mario is colliding with any block and what item that block contains so that
     # the program knows what to do depending on the type of the block:
+    # Creatred by Eduardo Alarcón 100472175@alumnos.uc3m.es
     def kikblock(self, x: int, y: int):
         for i in self.question_block_list:
             # If Mario is big the breakable blocks are removed from the block list when kicked:
@@ -173,4 +175,5 @@ class Mario:
                 self.deltax = 0
             elif (self.x - i.x - 16) < 1 and abs(self.y - i.y) < 10 and self.deltax <= 0:
                 self.deltax = 0"""
+    # Creatred by Eduardo Alarcón 100472175@alumnos.uc3m.es
 
